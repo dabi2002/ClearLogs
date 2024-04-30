@@ -3,8 +3,8 @@
 set -x
 # Parámetros
 logsFiles=4
-logsArchivePath="/home/drodriguez@latinia.ofi/historic"
-logsPath="/home/drodriguez@latinia.ofi/logs"
+logsArchivePath="/home/drodriguez/historic"
+logsPath="/home/drodriguez/logs"
 archiveDays=2
 username="drodriguez"
 
@@ -24,9 +24,9 @@ declare -A historicPaths=(
 )
 # Definimos los nodos donde ingresará el script
 declare -A nodos=(
-    ["nodo1"]="baji-l03-nodo2"  
-    ["nodo2"]="baji-l03-nodo2"  
-    ["nodo3"]="baji-l04-nodo1"  
+    ["nodo1"]="server1-l03-nodo2"  
+    ["nodo2"]="server2-l03-nodo2"  
+    ["nodo3"]="server3-l04-nodo1"  
 )
 # Función para procesar logs en una ruta dada
 process_logs() {
